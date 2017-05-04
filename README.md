@@ -20,7 +20,7 @@ devtools::install_github("statnet/EpiModelHIV", ref = "prep-sti")
 
 ## Citation
 
-> Jenness SM, Weiss KM, Goodreau SM, Gift T, Chesson H, Hoover KW, Smith DK, Liu AY, Sullivan PS, Rosenberg ES. Incidence of Gonorrhea and Chlamydia Following HIV Preexposure Prophylaxis among Men Who Have Sex with Men: A Modeling Study. _Under Review_
+> Jenness SM, Weiss KM, Goodreau SM, Gift T, Chesson H, Hoover KW, Smith DK, Liu AY, Sullivan PS, Rosenberg ES. Incidence of Gonorrhea and Chlamydia Following HIV Preexposure Prophylaxis among Men Who Have Sex with Men: A Modeling Study. _In Press: Clinical Infectious Diseases._
 
 <img src="https://github.com/statnet/stiPrEP/raw/master/analysis/Fig3.jpg">
 
