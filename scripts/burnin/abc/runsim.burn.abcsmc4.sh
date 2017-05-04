@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ### User specs
-#PBS -N sti-abc-meta
+#PBS -N sti-abc-recalib
 #PBS -l nodes=1:ppn=16,mem=50gb,feature=16core,walltime=05:00:00:00
 #PBS -o /gscratch/csde/sjenness/stia/out
 #PBS -e /gscratch/csde/sjenness/stia/out

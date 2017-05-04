@@ -91,13 +91,13 @@ pia.loess.ct <- loess(pia.ct ~ cov * rc, data = df, degree = 2, span = 0.15)
 pia.fit.ct <- expand.grid(list(cov = seq(0.1, 0.9, 0.002),
                                rc = seq(0, 1, 0.002)))
 pia.fit.ct$pia <- as.numeric(predict(pia.loess.ct, newdata = pia.fit.ct))
-pal <- viridis(n = 21, option = "D")
+pal <- viridis(n = 21, option = "C")
 
 plot.left <- contourplot(pia ~ cov * rc, data = pia.fit.gc,
                          cuts = 15, region = TRUE,
                          ylab = "Risk Compensation",
                          xlab = "Coverage",
-                         main = "Percent GC Infections Averted",
+                         main = "Percent NG Infections Averted",
                          col.regions = pal,
                          labels = FALSE,
                          contour = TRUE)

@@ -8,17 +8,23 @@ devtools::load_all("~/Dropbox/Dev/EpiModelHIV/EpiModelHIV")
 data(st)
 
 param <- param_msm(nwstats = st,
-                   prep.start = 26,
-                   prep.coverage = 0.5)
+                   rgc.tprob = 0.358,
+                   ugc.tprob = 0.248,
+                   rct.tprob = 0.322,
+                   uct.tprob = 0.213,
+                   hiv.rgc.rr = 2.78,
+                   hiv.ugc.rr = 1.73,
+                   hiv.rct.rr = 2.78,
+                   hiv.uct.rr = 1.73,
+                   hiv.dual.rr = 0.2)
 init <- init_msm(nwstats = st)
-
 control <- control_msm(simno = 1,
                        nsteps = 100,
-                       nsims = 1,
-                       ncores = 1)
+                       nsims = 1, ncores = 1,
+                       verbose = TRUE)
 
-data(est)
-sim <- netsim(est, param, init, control)
+load("~/Dropbox/Dev/EpiModelHIV/EpiModelHIV/data/dat.rda")
+sim <- netsim(dat, param, init, control)
 
 df <- as.data.frame(sim)
 names(df)
@@ -41,12 +47,10 @@ plot(sim, y = c("ir100.gc", "ir100.ct"))
 
 control$bi.mods
 
-undebug(sti_recov)
-undebug(sti_tx)
-undebug(prevalence_msm)
-undebug(sti_trans)
+debugonce(initialize_msm)
+debugonce(init_status_msm)
 
-dat <- initialize_msm(est, param, init, control, s = 1)
+dat <- initialize_msm(dat, param, init, control, s = 1)
 
 for (at in 2:100) {
   dat <- aging_msm(dat, at)       ## <1 ms

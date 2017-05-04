@@ -1,12 +1,12 @@
 #!/bin/bash
 
 ### User specs
-#PBS -N sti-burn
+#PBS -N recalib
 #PBS -l nodes=1:ppn=16,mem=50gb,feature=16core,walltime=01:00:00
-#PBS -o /gscratch/csde/sjenness/sti/out
-#PBS -e /gscratch/csde/sjenness/sti/out
+#PBS -o /gscratch/csde/sjenness/stia/out
+#PBS -e /gscratch/csde/sjenness/stia/out
 #PBS -j oe
-#PBS -d /gscratch/csde/sjenness/sti
+#PBS -d /gscratch/csde/sjenness/stia
 #PBS -m n
 
 ### Standard specs
