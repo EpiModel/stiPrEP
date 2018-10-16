@@ -4,7 +4,7 @@ This repository holds the source to code to reproduce the analysis featured in o
 
 ## Citation
 
-> Jenness SM, Weiss KM, Goodreau SM, Gift T, Chesson H, Hoover KW, Smith DK, Liu AY, Sullivan PS, Rosenberg ES. Incidence of Gonorrhea and Chlamydia Following HIV Preexposure Prophylaxis among Men Who Have Sex with Men: A Modeling Study. _In Press: Clinical Infectious Diseases._
+> Jenness SM, Weiss KM, Goodreau SM, Gift T, Chesson H, Hoover KW, Smith DK, Liu AY, Sullivan PS, Rosenberg ES. Incidence of Gonorrhea and Chlamydia Following HIV Preexposure Prophylaxis among Men Who Have Sex with Men: A Modeling Study. _Clinical Infectious Diseases._ 2018; 67(1): 155–156.
 
 <img src="https://github.com/statnet/stiPrEP/raw/master/analysis/Fig1.jpg">
 
